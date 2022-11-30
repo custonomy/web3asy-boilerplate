@@ -1,0 +1,27 @@
+{
+  "name": "@custonomy-dapp/monorepo",
+  "version": "1.0.0",
+  "keywords": [
+    "ethereum",
+    "react",
+    "workspaces",
+    "yarn"
+  ],
+  "private": true,
+  "scripts": {
+    "react-app:build": "yarn workspace @custonomy-dapp/react-app build",
+    "react-app:eject": "yarn workspace @custonomy-dapp/react-app eject",
+    "react-app:start": "yarn workspace @custonomy-dapp/react-app start",
+    "react-app:uat": "cp packages/react-app/.env.uat packages/react-app/.env && yarn workspace @custonomy-dapp/react-app start",
+    "backend:start": "yarn workspace @custonomy-dapp/backend start",
+    "react-app:test": "yarn workspace @custonomy-dapp/react-app test"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "resolutions": {
+    "react-error-overlay": "6.0.9"
+  }
+}
