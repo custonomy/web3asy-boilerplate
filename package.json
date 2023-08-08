@@ -1,0 +1,35 @@
+{
+  "name": "@my-app/monorepo",
+  "version": "1.0.0",
+  "keywords": [
+    "ethereum",
+    "react",
+    "workspaces",
+    "yarn"
+  ],
+  "private": true,
+  "proxy": "http://localhost:4242",
+  "scripts": {
+    "react-app:build": "yarn workspace @custonomy-dapp/react-app build",
+    "react-app:eject": "yarn workspace @custonomy-dapp/react-app eject",
+    "react-app:ipfs": "yarn workspace @custonomy-dapp/react-app ipfs",
+    "react-app:start": "yarn workspace @custonomy-dapp/react-app start",
+    "react-app:uat": "cp packages/react-app/.env.uat packages/react-app/.env && yarn workspace @custonomy-dapp/react-app start",
+    "backend:start": "yarn workspace @custonomy-dapp/backend start",
+    "backend:dev": "yarn workspace @custonomy-dapp/backend dev",
+    "react-app:test": "yarn workspace @custonomy-dapp/react-app test",
+    "custonomy:register": "yarn workspace @custonomy-dapp/backend register"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "resolutions": {
+    "react-error-overlay": "6.0.9"
+  },
+  "dependencies": {
+    "axios": "^1.3.4",
+    "stripe": "^11.13.0"
+  }
+}

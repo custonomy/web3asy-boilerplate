@@ -1,0 +1,71 @@
+{
+  "name": "@custonomy-dapp/react-app",
+  "version": "1.0.0",
+  "homepage": "./",
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ],
+  "dependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@custonomy/custonomy-wallet-provider": "^1.0.0",
+    "@custonomy/oneclickcheckout": "^1.0.6",
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "@ethersproject/contracts": "^5.6.0",
+    "@ethersproject/providers": "^5.6.0",
+    "@mui/icons-material": "^5.10.3",
+    "@mui/material": "^5.10.3",
+    "@mui/styles": "^5.10.3",
+    "@react-three/drei": "^9.5.0",
+    "@react-three/fiber": "^8.0.12",
+    "@stripe/react-stripe-js": "^1.16.5",
+    "@stripe/stripe-js": "^1.48.0",
+    "axios": "^0.27.2",
+    "dotenv": "^16.1.1",
+    "ethers": "^5.7.1",
+    "git": "^0.1.5",
+    "graphql": "^16.3.0",
+    "ipfs-deploy": "^11.2.0",
+    "payment": "^2.4.6",
+    "process": "^0.11.10",
+    "react": "18.0.0",
+    "react-credit-cards": "^0.8.3",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6",
+    "react-scripts": "^4.0.3",
+    "sha256": "^0.2.0",
+    "three": "^0.144.0",
+    "typescript": "^4.8.2"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "scripts": {
+    "build": "react-scripts build",
+    "eject": "react-scripts eject",
+    "ipfs": "yarn build && ipfs-deploy build/",
+    "start": "react-scripts start",
+    "test": "react-scripts test"
+  },
+  "resolutions": {
+    "react-error-overlay": "6.0.9"
+  },
+  "devDependencies": {
+    "@types/react-credit-cards": "^0.8.1",
+    "@types/three": "^0.144.0",
+    "@testing-library/dom": "^8.11.3",
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/react": "^12.1.4",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^29.0.0",
+    "@types/node": "^18.7.14",
+    "@types/payment": "^2.1.4",
+    "@types/react": "^18.0.18",
+    "@types/react-dom": "^18.0.6"
+  }
+}

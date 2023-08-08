@@ -1,0 +1,40 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+node_modules
+.pnp
+.pnp.js
+
+# testing
+coverage
+
+# production
+build
+
+# misc
+.DS_Store
+.env
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+*/**/database.sqlite
+packages/backend/.env*
+packages/react-app/.env*
+packages/backend/**/environment*
+database.sqlite
+
+*/**/id_rsa*
+*/**/docker/config
+
+packages/backend/lib
+
+yarn.lock
+
+*/**/package-lock.json
+*/**/yarn.lock
+*/**/.ec_key
+
+*Dockerfile*
