@@ -1,65 +1,44 @@
-This project was bootstrapped with [Create Eth App](https://github.com/paulrberg/create-eth-app).
+# Custonomy DApp Boilerplate
 
-## Project Structure
+This example dApp demonstrates how you may use Custonomy Web3asy Solutions to work together with Custonomy's API to execute an NFT mint.
 
-The default template is a monorepo created with [Yarn Workspaces](https://classic.yarnpkg.com/en/docs/workspaces/).
+### Features
 
-Workspaces makes it possible to setup multiple packages in such a way that we only need to run `yarn install` once to install all of them in
-a single pass. Dependencies are hoisted at the root.
+✅ Custonomy Widget Integration
+<br />
+✅ Custonomy Mint API
+<br />
+✅ Mint NFT using Crypto
+<br />
+✅ Mint NFT using Custonomy One Click Checkout Solutions
+<br />
+✅ View NFT Collection
+<br />
+✅ Transfer NFT
+<br />
 
-Owing to this dependency on Yarn Workspaces, Create Eth App can't be used with npm.
+### Setup
 
-## Available Scripts
+Clone the repository and install the dependencies.
 
-In the project directory, you can run:
+```
+yarn install
+```
 
-### Backend
+Once installed, enter your secrets to the `.env` files, one for the frontend, at path `packages/react-app` and one for the backend, at path `packages/backend`.
 
-#### `yarn backend:start`
+To run the app, start both the frontend and the backend.
 
-Runs the backend in development mode.<br>
-Open [http://localhost:5000](http://localhost:5000) to use it.
+```
+yarn react-app:start
+```
 
-The backend will automatically reload if you make changes to the code.<br>
-You will see the build errors and lint warnings in the console.
+```
+yarn backend:dev
+```
 
-### React App
+### DB Schema Migration
 
-#### `yarn react-app:start`
+To setup a PostgreSQL DB. Please find the necessary DB model and Knex migration files in `packages/backend/models`
 
-Runs the React app in development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will automatically reload if you make changes to the code.<br>
-You will see the build errors and lint warnings in the console.
-
-#### `yarn react-app:test`
-
-Runs the React test watcher in an interactive mode.<br>
-By default, runs tests related to files changed since the last commit.
-
-[Read more about testing React.](https://facebook.github.io/create-react-app/docs/running-tests)
-
-#### `yarn react-app:build`
-
-Builds the React app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the React documentation on [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-#### `yarn react-app:eject`
-
-**Note: this is a one-way operation. Once you `react-app:eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` the React app at any time. This command will
-remove the single build dependency from your React package.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right
-into the `react-app` package so you have full control over them. All of the commands except `react-app:eject` will still work,
-but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `react-app:eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
+Please check out [this guide](https://www.heady.io/blog/knex-migration-for-schema-and-seeds-with-postgresql) on Knex migration.
