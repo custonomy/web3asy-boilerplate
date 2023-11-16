@@ -2,12 +2,12 @@ import {config as envconfig} from 'dotenv';
 envconfig()
 
 export const config = {
-  ALCHEMY_API_KEY: process.env.REACT_APP_ALCHEMY_API_KEY ?? "m-orjwcwblrtcK1sKB3-meEbFQuJsAlW",
-  INFURA_LINK: process.env.REACT_APP_INFURA_LINK ?? "https://polygon-mainnet.infura.io/v3/1ea71c51dd35447cb60912a1603b8a35",
-  CUSTONOMY_PROJECT_ID: process.env.REACT_APP_CUSTONOMY_PROJECT_ID ?? "ad8433d5-605c-4b02-aad1-df3244a30ee9",
-  CUSTONOMY_API_KEY: process.env.REACT_APP_CUSTONOMY_API_KEY ?? "custonomy_api.MVOTZ6AALBUZPYURZAD4ALOBUNLY",
+  ALCHEMY_API_KEY: process.env.REACT_APP_ALCHEMY_API_KEY ?? "",
+  INFURA_LINK: process.env.REACT_APP_INFURA_LINK ?? "https://polygon-mainnet.infura.io/v3/",
+  CUSTONOMY_PROJECT_ID: process.env.REACT_APP_CUSTONOMY_PROJECT_ID ?? "",
+  CUSTONOMY_API_KEY: process.env.REACT_APP_CUSTONOMY_API_KEY ?? "",
   CUSTONOMY_END_POINT: process.env.REACT_APP_CUSTONOMY_END_POINT ?? "https://apip.custonomy.io",
-  CUSTONOMY_WIDGET_URL: process.env.REACT_APP_CUSTONOMY_WIDGET_URL ?? "https://cwidget.custonomy.io/index.js",
+  CUSTONOMY_WIDGET_URL: process.env.REACT_APP_CUSTONOMY_WIDGET_URL ?? "https://cwidget2.custonomy.io/index.js",
   API_BASE_URL: process.env.REACT_APP_API_BASE_URL ?? "https://exhibit-api.custonomy.io/api",
   CHAIN_ID: process.env.REACT_APP_CHAIN_ID ?? '0x89',
   CONTRACT: {

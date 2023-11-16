@@ -21,8 +21,8 @@ yarn-debug.log*
 yarn-error.log*
 
 */**/database.sqlite
-packages/backend/.env*
-packages/react-app/.env*
+packages/backend/.env
+packages/react-app/.env
 packages/backend/**/environment*
 database.sqlite
 
